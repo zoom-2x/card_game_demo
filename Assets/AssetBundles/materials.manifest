@@ -1,0 +1,147 @@
+ManifestFileVersion: 0
+CRC: 107772653
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9a06e01f826ec180171840b7c13e7cad
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b30fce1a9ad74efb72be6c308c56e365
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 9a06e01f826ec180171840b7c13e7cad
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Custom/hex/materials/hex_base_off.mat
+- Assets/Custom/card_art/materials/default/unlit/default_art_3_unlit.mat
+- Assets/Custom/cards/materials/default/lit/card_default_flow.mat
+- Assets/Custom/card_art/materials/style_0/lit/style_0_art_9.mat
+- Assets/Custom/card_art/materials/style_0/lit/style_0_art_8.mat
+- Assets/Custom/card_art/materials/style_0/lit/style_0_art_10.mat
+- Assets/Custom/cards/materials/style_0/lit/card_style_0_flow_over.mat
+- Assets/Custom/card_art/materials/default/lit/default_art_6.mat
+- Assets/Custom/hex/materials/hex_region_border.mat
+- Assets/Custom/card_art/materials/default/lit/default_art_5.mat
+- Assets/Custom/cards/materials/default/unlit/card_default_flame_unlit_over.mat
+- Assets/Custom/card_art/materials/default/unlit/default_art_blank_unlit.mat
+- Assets/Custom/border/card_border_off.mat
+- Assets/Custom/cards/materials/style_0/unlit/card_style_0_flow_unlit.mat
+- Assets/Custom/hex/materials/region/region_dashed_light.mat
+- Assets/Custom/hex/materials/region/region_over_red.mat
+- Assets/Custom/border/debug_border_material.mat
+- Assets/Custom/card_art/materials/style_0/lit/style_0_art_6.mat
+- Assets/Custom/cards/materials/style_0/unlit/card_style_0_none_unlit.mat
+- Assets/Custom/card_art/materials/default/unlit/default_art_10_unlit.mat
+- Assets/Custom/hex/materials/region/region_dashed.mat
+- Assets/Custom/card_art/materials/style_0/unlit/style_0_art_3_unlit.mat
+- Assets/Custom/card_art/materials/default/lit/default_art_0.mat
+- Assets/Custom/cards/materials/default/unlit/card_default_flame_unlit.mat
+- Assets/Custom/card_art/materials/style_0/lit/style_0_art_2.mat
+- Assets/Custom/cards/materials/style_0/lit/card_style_0_none.mat
+- Assets/Custom/cards/materials/default/unlit/card_default_none.mat
+- Assets/Custom/hex/materials/hex_tile_dashed_off_blue.mat
+- Assets/Custom/cards/materials/default/unlit/card_default_fx0_unlit_over.mat
+- Assets/Custom/cards/materials/style_0/lit/card_style_0_none_over.mat
+- Assets/Custom/hex/materials/hex_tile_on_blue.mat
+- Assets/Custom/card_art/materials/default/lit/default_art_2.mat
+- Assets/Custom/cards/materials/style_0/lit/card_style_0_flame_over.mat
+- Assets/Custom/hex/materials/region/region_dashed_red.mat
+- Assets/Custom/hex/materials/hex_tile_dashed_on.mat
+- Assets/Custom/border/card_border_on.mat
+- Assets/Custom/cards/materials/style_0/unlit/card_style_0_flame_unlit_over.mat
+- Assets/Custom/hex/materials/hex_tile_dashed_off.mat
+- Assets/Custom/card_art/materials/default/lit/default_art_blank.mat
+- Assets/Custom/hex/materials/hex_base_on.mat
+- Assets/Custom/card_art/materials/default/unlit/default_art_5_unlit.mat
+- Assets/Custom/cards/materials/default/unlit/card_default_flow_texture_unlit_over.mat
+- Assets/Custom/card_art/materials/style_0/unlit/style_0_art_9_unlit.mat
+- Assets/Custom/cards/materials/style_0/lit/card_style_0_flame.mat
+- Assets/Custom/cards/materials/default/unlit/card_default_none_over.mat
+- Assets/Custom/hex/materials/hex_tile_on_red.mat
+- Assets/Custom/hex/materials/hex_tile_off.mat
+- Assets/Custom/border/play_preview_border.mat
+- Assets/Custom/hex/materials/hex_tile_on.mat
+- Assets/Custom/card_art/materials/default/lit/default_art_9.mat
+- Assets/Custom/card_art/materials/style_0/lit/style_0_art_0.mat
+- Assets/Custom/cards/materials/style_0/unlit/card_style_0_flow_unlit_over.mat
+- Assets/Custom/cards/materials/default/unlit/card_default_flow_unlit_over.mat
+- Assets/Custom/card_art/materials/style_0/unlit/style_0_art_8_unlit.mat
+- Assets/Custom/hex/materials/hex_blank.mat
+- Assets/Custom/hex/materials/region/region_over_blue.mat
+- Assets/Custom/border/container_border.mat
+- Assets/Custom/card_art/materials/style_0/unlit/style_0_art_0_unlit.mat
+- Assets/Custom/cards/materials/style_0/unlit/card_style_0_none_unlit_over.mat
+- Assets/Custom/border/region_link.mat
+- Assets/Custom/card_art/materials/default/unlit/default_art_4_unlit.mat
+- Assets/Custom/cards/materials/style_0/lit/card_style_0_fx0.mat
+- Assets/Custom/cards/materials/style_0/unlit/card_style_0_flame_unlit.mat
+- Assets/Custom/card_art/materials/style_0/unlit/style_0_art_2_unlit.mat
+- Assets/Custom/card_art/materials/style_0/unlit/style_0_art_6_unlit.mat
+- Assets/Custom/card_art/materials/default/lit/default_art_4.mat
+- Assets/Custom/card_art/materials/style_0/unlit/style_0_art_7_unlit.mat
+- Assets/Custom/cards/materials/default/unlit/card_default_fx0_unlit.mat
+- Assets/Custom/border/discard_preview_border.mat
+- Assets/Custom/cards/materials/default/lit/card_default_fx0.mat
+- Assets/Custom/cards/materials/default/lit/card_default_fx0_over.mat
+- Assets/Custom/hex/materials/hex_region_border_curved.mat
+- Assets/Custom/cards/materials/default/lit/card_default_none.mat
+- Assets/Custom/card_art/materials/style_0/unlit/style_0_art_4_unlit.mat
+- Assets/Custom/cards/materials/default/unlit/card_default_flow_unlit.mat
+- Assets/Custom/card_art/materials/style_0/lit/style_0_art_1.mat
+- Assets/Custom/card_art/materials/style_0/lit/style_0_art_3.mat
+- Assets/Materials/blank.mat
+- Assets/Custom/card_art/materials/default/lit/default_art_8.mat
+- Assets/Custom/hex/materials/region/region_dashed_blue.mat
+- Assets/Custom/hex/materials/hex_tile_dashed_on_red.mat
+- Assets/Custom/card_art/materials/default/lit/default_art_3.mat
+- Assets/Custom/cards/materials/style_0/unlit/card_style_0_flow_texture_unlit_over.mat
+- Assets/Custom/card_art/materials/default/unlit/default_art_6_unlit.mat
+- Assets/Custom/card_art/materials/default/unlit/default_art_9_unlit.mat
+- Assets/Custom/cards/materials/style_0/lit/card_style_0_flow_texture.mat
+- Assets/Custom/hex/materials/hex_tile_off_blue.mat
+- Assets/Custom/hex/materials/hex_tile_dashed_off_red.mat
+- Assets/Custom/card_art/materials/style_0/lit/style_0_art_7.mat
+- Assets/Custom/card_art/materials/default/unlit/default_art_0_unlit.mat
+- Assets/Custom/cards/materials/default/unlit/card_default_flow_texture_unlit.mat
+- Assets/Custom/card_art/materials/default/unlit/default_art_7_unlit.mat
+- Assets/Custom/hex/materials/hex_tile_dashed_on_blue.mat
+- Assets/Custom/hex/materials/hex_tile_blank.mat
+- Assets/Custom/hex/materials/region/region_over.mat
+- Assets/Custom/cards/materials/style_0/unlit/card_style_0_fx0_unlit_over.mat
+- Assets/Custom/cards/materials/default/lit/card_default_flame_over.mat
+- Assets/Custom/cards/materials/style_0/unlit/card_style_0_fx0_unlit.mat
+- Assets/Custom/card_art/materials/default/unlit/default_art_2_unlit.mat
+- Assets/Custom/cards/materials/style_0/lit/card_style_0_flow.mat
+- Assets/Custom/hex/materials/hex_tile_off_red.mat
+- Assets/Custom/card_art/materials/style_0/lit/style_0_art_4.mat
+- Assets/Custom/card_art/materials/style_0/unlit/style_0_art_10_unlit.mat
+- Assets/Custom/card_art/materials/default/lit/default_art_1.mat
+- Assets/Custom/card_art/materials/style_0/lit/style_0_art_5.mat
+- Assets/Custom/cards/materials/default/lit/card_default_flow_texture.mat
+- Assets/Custom/card_art/materials/default/lit/default_art_10.mat
+- Assets/Custom/card_art/materials/default/unlit/default_art_8_unlit.mat
+- Assets/Custom/cards/materials/style_0/unlit/card_style_0_flow_texture_unlit.mat
+- Assets/Custom/cards/materials/default/lit/card_default_flame.mat
+- Assets/Custom/cards/materials/style_0/lit/card_style_0_flow_texture_over.mat
+- Assets/Custom/cards/materials/default/lit/card_default_flow_texture_over.mat
+- Assets/Custom/card_art/materials/default/lit/default_art_7.mat
+- Assets/Custom/cards/materials/default/lit/card_default_flow_over.mat
+- Assets/Custom/hex/materials/region/region_dashed_light_blue.mat
+- Assets/Custom/card_art/materials/default/unlit/default_art_1_unlit.mat
+- Assets/Custom/card_art/materials/style_0/unlit/style_0_art_5_unlit.mat
+- Assets/Custom/cards/materials/style_0/lit/card_style_0_fx0_over.mat
+- Assets/Custom/card_art/materials/style_0/unlit/style_0_art_1_unlit.mat
+- Assets/Custom/cards/materials/default/lit/card_default_none_over.mat
+- Assets/Custom/hex/materials/region/region_dashed_light_red.mat
+Dependencies:
+- I:/Workspace/Projects/unity/card_game/Assets/assetbundles/card_textures
+- I:/Workspace/Projects/unity/card_game/Assets/assetbundles/common_textures
+- I:/Workspace/Projects/unity/card_game/Assets/assetbundles/shaders

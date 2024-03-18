@@ -1,0 +1,55 @@
+ManifestFileVersion: 0
+CRC: 1892221011
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 19370362b45054967b4f3c7143a8bba7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b30fce1a9ad74efb72be6c308c56e365
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 19370362b45054967b4f3c7143a8bba7
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Custom/cards/shaders/lit/card_none.shadergraph
+- Assets/Custom/cards/shaders/lit/card_flow_texture.shadergraph
+- Assets/Custom/subgraphs/flame_effect.shadersubgraph
+- Assets/Custom/subgraphs/flow_effect_textures.shadersubgraph
+- Assets/Custom/cards/shaders/unlit/card_fx0_unlit.shadergraph
+- Assets/Custom/subgraphs/postprocess.shadersubgraph
+- Assets/TextMesh Pro/Shaders/TMP_SDF.shader
+- Assets/Custom/cards/shaders/unlit/card_flow_unlit.shadergraph
+- Assets/Custom/subgraphs/flow_effect.shadersubgraph
+- Assets/Custom/hex/shaders/hex_region_simple.shadergraph
+- Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+- Assets/Custom/hex/shaders/hex_piece.shadergraph
+- Assets/Custom/hex/shaders/hex_region_border.shadergraph
+- Assets/Custom/subgraphs/card.shadersubgraph
+- Assets/Custom/hex/shaders/hex.shadergraph
+- Assets/Custom/cards/shaders/lit/card_fx0.shadergraph
+- Assets/Custom/subgraphs/card_emission.shadersubgraph
+- Assets/Custom/card_art/shaders/card_art.shadergraph
+- Assets/Custom/hex/shaders/region_border.shader
+- Assets/Custom/cards/shaders/unlit/card_flow_texture_unlit.shadergraph
+- Assets/Custom/hex/shaders/hex_region_dashed.shadergraph
+- Assets/Components/line_renderer/LineShader.shadergraph
+- Assets/Custom/cards/shaders/lit/card_flame.shadergraph
+- Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader
+- Assets/Custom/subgraphs/fx_0.shadersubgraph
+- Assets/Custom/subgraphs/fx_postprocess.shadersubgraph
+- Assets/Custom/cards/shaders/lit/card_flow.shadergraph
+- Assets/Custom/card_art/shaders/card_art_unlit.shadergraph
+- Assets/Custom/cards/shaders/unlit/card_none_unlit.shadergraph
+- Assets/Custom/cards/shaders/unlit/card_flame_unlit.shadergraph
+Dependencies:
+- I:/Workspace/Projects/unity/card_game/Assets/assetbundles/card_textures
+- I:/Workspace/Projects/unity/card_game/Assets/assetbundles/common_textures

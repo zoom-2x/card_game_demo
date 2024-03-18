@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Editor/uss/controls.uss?fileID=7433441132597879392&amp;guid=397785c4c5a375b428386aa2b4beb444&amp;type=3#controls" />
+    <ui:VisualElement name="save-load-map-panel" class="panel">
+        <ui:VisualElement name="row" class="row row-vertical">
+            <ui:TextField picking-mode="Ignore" label="Name:" value="Unamed map" name="map-name" class="editor-control last-child" />
+        </ui:VisualElement>
+        <ui:VisualElement name="row" class="row-vertical row">
+            <ui:TextField picking-mode="Ignore" label="Filepath:" name="map-filepath" class="editor-control last-child" />
+        </ui:VisualElement>
+        <ui:VisualElement name="row" class="row-horizontal row">
+            <ui:Button text="Save" display-tooltip-when-elided="true" name="save-map-button" enable-rich-text="true" class="editor-button editor-button__horizontal" style="flex-shrink: 1; flex-grow: 1; width: 50%;" />
+            <ui:Button text="Load" display-tooltip-when-elided="true" name="load-map-button" enable-rich-text="true" class="editor-button" style="flex-shrink: 1; flex-grow: 1; width: 50%;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="row" class="row-vertical row row-last" style="margin-bottom: 0;">
+            <ui:Label tabindex="-1" text="* unsaved data will be lost" display-tooltip-when-elided="true" class="notification" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

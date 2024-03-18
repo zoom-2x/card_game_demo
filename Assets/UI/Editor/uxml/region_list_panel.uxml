@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="RegionListItem" src="project://database/Assets/UI/Editor/uxml/region_list_item.uxml?fileID=9197481963319205126&amp;guid=382f44e14482788439e3ac37161d4a35&amp;type=3#region_list_item" />
+    <Style src="project://database/Assets/UI/Editor/uss/controls.uss?fileID=7433441132597879392&amp;guid=397785c4c5a375b428386aa2b4beb444&amp;type=3#controls" />
+    <ui:VisualElement name="region-list-panel" class="panel">
+        <ui:VisualElement name="row" class="row-vertical row">
+            <ui:ListView focusable="true" name="region-list" virtualization-method="DynamicHeight" show-border="false" class="editor-list-view" style="height: 400px; display: flex;" />
+            <ui:ScrollView class="editor-list-view" style="height: 100px; display: none;">
+                <ui:Instance template="RegionListItem" name="RegionListItem" />
+                <ui:Instance template="RegionListItem" name="RegionListItem" />
+                <ui:Instance template="RegionListItem" name="RegionListItem" />
+                <ui:Instance template="RegionListItem" name="RegionListItem" />
+                <ui:Instance template="RegionListItem" name="RegionListItem" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+        <ui:VisualElement name="row" class="row row-vertical row-last" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:Button text="New Region" display-tooltip-when-elided="true" name="new-region-button" class="editor-button editor-button__vertical" />
+            <ui:Button text="Edit Region" display-tooltip-when-elided="true" name="edit-region-button" class="editor-button" style="display: none;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

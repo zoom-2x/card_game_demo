@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Editor/uss/controls.uss?fileID=7433441132597879392&amp;guid=397785c4c5a375b428386aa2b4beb444&amp;type=3#controls" />
+    <ui:VisualElement name="links-panel" class="panel">
+        <ui:VisualElement name="row" class="row row-vertical">
+            <ui:VisualElement name="start-tile" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
+                <ui:IntegerField label="Start row:" value="0" name="start-tile-row" class="editor-control" />
+                <ui:IntegerField label="Start col:" value="0" name="start-tile-col" class="editor-control" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="row" class="row row-vertical">
+            <ui:VisualElement name="middle-tile" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
+                <ui:IntegerField label="Middle row:" value="0" name="middle-tile-row" class="editor-control" />
+                <ui:IntegerField label="Middle col:" value="0" name="middle-tile-col" class="editor-control" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="row" class="row row-vertical">
+            <ui:VisualElement name="middle-tile" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
+                <ui:IntegerField label="End row:" value="0" name="end-tile-row" class="editor-control" />
+                <ui:IntegerField label="End col:" value="0" name="end-tile-col" class="editor-control" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="row" class="row-horizontal row">
+            <ui:Button text="Save" display-tooltip-when-elided="true" name="save-link-button" enable-rich-text="true" class="editor-button editor-button__horizontal" style="flex-shrink: 1; flex-grow: 1; width: 50%;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

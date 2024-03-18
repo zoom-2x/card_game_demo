@@ -1,0 +1,189 @@
+ManifestFileVersion: 0
+CRC: 277097446
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 57c1ad12dca357b9c54121af609995c9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0276dc208d85054b39b20e5834beedbc
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 57c1ad12dca357b9c54121af609995c9
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 44932b33ecc57e3499c8938965274881, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0633ff5481333cf48916f2c72b5186c6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f7b69c0d9fccd7e4d984195d88cb43ca, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 38f53490267164b498ff57db8d64ba36, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1ff3180d3347d2f43a7d3a7d42b78458, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5dd0a4c743d371041b5917e726ff823a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0cb5aa27ef4533c41a52227e1358f442, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c06f663a1d0cb3749a39b244ca250bd3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c230dbcdc13c5014884d4a8e3e851582, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7655fb57f4c0a5b4c97efef12a0fddbf, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: af41fc975fe260147b18d56a47bc1756, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3ca249b4e0207c244b3d9c55b9ab4ee4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 066f5863fa079bf49b6058ef519e1067, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+- Class: 225
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.FaceInfo_Legacy
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.FontAssetCreationSettings
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.KerningTable
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_Character
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_FontFeatureTable
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_FontWeightPair
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.VertexGradient
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.ArgumentCache
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentListenerMode
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.RectOffset
+- AssemblyName: UnityEngine.TextCoreFontEngineModule
+  ClassName: UnityEngine.TextCore.FaceInfo
+- AssemblyName: UnityEngine.TextCoreFontEngineModule
+  ClassName: UnityEngine.TextCore.Glyph
+- AssemblyName: UnityEngine.TextCoreFontEngineModule
+  ClassName: UnityEngine.TextCore.GlyphMetrics
+- AssemblyName: UnityEngine.TextCoreFontEngineModule
+  ClassName: UnityEngine.TextCore.GlyphRect
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.AnimationTriggers
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Button/ButtonClickedEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.ColorBlock
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.FontData
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Navigation
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.ScrollRect/ScrollRectEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Scrollbar/ScrollEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.SpriteState
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Toggle/ToggleEvent
+Assets:
+- Assets/Meshes/playing_card_model.obj
+- Assets/Prefabs/hexmap/region_mesh.prefab
+- Assets/Meshes/deck_base_model.obj
+- Assets/Prefabs/ui/popup_item_minus.prefab
+- Assets/Prefabs/hexmap/region_border_curved.prefab
+- Assets/Prefabs/cards/card_style_0.prefab
+- Assets/Prefabs/placeholder.prefab
+- Assets/Meshes/hex_base_model.obj
+- Assets/Prefabs/hexmap/hex_tile.prefab
+- Assets/Prefabs/cards/card_base.prefab
+- Assets/Prefabs/hexmap/hex_base.prefab
+- Assets/Prefabs/Container.prefab
+- Assets/Prefabs/hexmap/tile_link.prefab
+- Assets/Prefabs/ui/screen_button.prefab
+- Assets/Prefabs/level_fade.prefab
+- Assets/Meshes/marketplace_board_model.obj
+- Assets/Prefabs/hexmap/region_border.prefab
+- Assets/Meshes/hex_piece_model.obj
+- Assets/Prefabs/ui/popup_item_plus.prefab
+- Assets/Prefabs/ui/region_label_gui.prefab
+- Assets/Prefabs/ui/UI.prefab
+- Assets/Prefabs/ui/info_panel.prefab
+- Assets/Prefabs/debug/debug_point.prefab
+Dependencies:
+- I:/Workspace/Projects/unity/card_game/Assets/assetbundles/fonts
+- I:/Workspace/Projects/unity/card_game/Assets/assetbundles/materials
+- I:/Workspace/Projects/unity/card_game/Assets/assetbundles/ui_textures

@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Editor/uss/EditorUI.uss?fileID=7433441132597879392&amp;guid=40219513fba75c343b2289d12d46c11a&amp;type=3#EditorUI" />
+    <Style src="project://database/Assets/UI/Main/uss/ui-common.uss?fileID=7433441132597879392&amp;guid=c6e4c107ba7fda242b6ba0281f9e6a44&amp;type=3#ui-common" />
+    <ui:VisualElement name="root" style="flex-grow: 0; width: auto; height: auto; min-width: 150px; min-height: 50px; background-color: rgb(0, 0, 0); padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; align-items: flex-start; justify-content: flex-start; flex-direction: column; max-width: 250px;">
+        <ui:VisualElement name="bkg" class="img" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Textures/ui/test2.png?fileID=2800000&amp;guid=99bfa299d6f36ee4281259f5f9079c17&amp;type=3#test2&apos;); -unity-background-scale-mode: scale-and-crop; width: 100%; height: 100%; border-left-color: rgb(71, 79, 106); border-right-color: rgb(71, 79, 106); border-top-color: rgb(71, 79, 106); border-bottom-color: rgb(71, 79, 106); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;">
+            <ui:Label tabindex="-1" text="-0.1 : Description" display-tooltip-when-elided="true" class="popup-info-entry__plus popup-info-entry" />
+            <ui:Label tabindex="-1" text="-0.1 : Description" display-tooltip-when-elided="true" name="Label" class="popup-info-entry popup-info-entry__minus" />
+            <ui:Label tabindex="-1" text="-0.1 : Description" display-tooltip-when-elided="true" class="popup-info-entry__plus popup-info-entry" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

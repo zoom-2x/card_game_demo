@@ -1,0 +1,12 @@
+.vs
+.vsconfig
+*.csproj
+*.sln
+*.htm
+node_modules
+Library
+Logs
+MemoryCaptures
+UserSettings
+Temp
+Assets/Docs

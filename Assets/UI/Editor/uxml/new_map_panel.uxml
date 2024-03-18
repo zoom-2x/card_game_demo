@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Editor/uss/controls.uss?fileID=7433441132597879392&amp;guid=397785c4c5a375b428386aa2b4beb444&amp;type=3#controls" />
+    <ui:VisualElement name="new-map-panel" class="panel">
+        <ui:VisualElement name="row" class="row-horizontal row">
+            <ui:IntegerField label="Rows:" value="0" name="map-rows" is-delayed="false" class="editor-control" style="width: 50%;" />
+            <ui:IntegerField label="Cols:" value="0" name="map-cols" is-delayed="false" class="editor-input last-child editor-control" style="width: 50%; flex-grow: 0;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="row" class="row-vertical row row-last" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:Button text="Generate" display-tooltip-when-elided="true" name="generate-map-button" enable-rich-text="true" class="editor-button last-child" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

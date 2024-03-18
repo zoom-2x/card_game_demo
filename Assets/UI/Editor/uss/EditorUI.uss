@@ -1,0 +1,128 @@
+#root {
+    justify-content: space-between;
+    flex-grow: 1;
+    opacity: 1;
+}
+
+#main-menu {
+    -unity-font-definition: url('project://database/Assets/Fonts/Generated/Sansation-T/Sansation-Regular%20SDF.asset?fileID=11400000&guid=96df9c5ee645c1741b11e4d1c7065bdd&type=2#Sansation-Regular SDF');
+    color: rgb(255, 255, 255);
+    height: 60px;
+    background-color: rgb(40, 56, 71);
+    border-right-width: 1px;
+    border-right-color: rgb(0, 0, 0);
+    flex-direction: row;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+#settings-area {
+    width: auto;
+    flex-shrink: 1;
+    flex-direction: row;
+    flex-grow: 0;
+    align-self: auto;
+    height: 100%;
+}
+
+#settings-area > .first {
+    align-items: stretch;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 1;
+    justify-content: flex-start;
+    width: 400px;
+    flex-wrap: nowrap;
+    overflow: visible;
+    align-self: auto;
+}
+
+#settings-area > .second {
+    width: 500px;
+    flex-shrink: 1;
+    height: auto;
+}
+
+#status-bar {
+    height: 35px;
+    background-color: rgba(40, 56, 71, 0);
+    flex-direction: row;
+    color: rgb(118, 163, 183);
+    -unity-font-definition: url('project://database/Assets/Fonts/Generated/Sansation-T/Sansation-Regular%20SDF.asset?fileID=11400000&guid=96df9c5ee645c1741b11e4d1c7065bdd&type=2#Sansation-Regular SDF');
+    align-items: auto;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    align-self: auto;
+}
+
+#status-bar .unity-label {
+    flex-grow: 0;
+    -unity-text-align: middle-left;
+    padding-left: 10px;
+    padding-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-left-color: rgb(77, 99, 115);
+    border-right-color: rgb(77, 99, 115);
+    border-top-color: rgb(77, 99, 115);
+    border-bottom-color: rgb(77, 99, 115);
+    border-right-width: 0;
+    height: 18px;
+    border-left-width: 1px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#status-bar .unity-label.first {
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    padding-left: 0;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+#editor-title {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 24px;
+    -unity-font-definition: url('project://database/Assets/Fonts/Generated/Sansation-T/Sansation-Light%20SDF.asset?fileID=11400000&guid=1e55e86c44a8c0748b13a2b52f7b8a30&type=2#Sansation-Light SDF');
+    color: rgb(119, 165, 186);
+    -unity-text-align: upper-center;
+    -unity-font-style: normal;
+    -unity-font: initial;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: auto;
+}
+
+.separator {
+    flex-grow: 0;
+    background-color: rgba(0, 0, 0, 0);
+    height: 1px;
+    border-left-color: rgb(72, 92, 108);
+    border-right-color: rgb(72, 92, 108);
+    border-top-color: rgb(72, 92, 108);
+    border-bottom-color: rgb(72, 92, 108);
+    border-bottom-width: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
+    flex-shrink: 1;
+}
+
+.img {
+    background-repeat: repeat-y;
+}

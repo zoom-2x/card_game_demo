@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Main/uss/ui-main-menu.uss?fileID=7433441132597879392&amp;guid=bff186e15b36a454095b40aad1277d59&amp;type=3#ui-main-menu" />
+    <ui:VisualElement name="root" class="menu-base">
+        <ui:Label tabindex="-1" text="CARD GAME DEMO" display-tooltip-when-elided="true" name="title" class="menu-title" />
+        <ui:VisualElement name="main-menu">
+            <ui:Button text="CARD PLAY" display-tooltip-when-elided="true" name="card-play" class="menu-button" />
+            <ui:Button text="MAP PLAY" display-tooltip-when-elided="true" name="map-play" class="menu-button" />
+            <ui:Button text="EDITOR" display-tooltip-when-elided="true" name="editor" class="menu-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

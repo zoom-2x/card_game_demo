@@ -1,0 +1,69 @@
+ManifestFileVersion: 0
+CRC: 2213034274
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4294e4d105b66428e0878db75a78e850
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 4294e4d105b66428e0878db75a78e850
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Textures/fx/fx_3.png
+- Assets/Textures/flowmaps/flowmap_1.png
+- Assets/Textures/common/Foil003_1K-PNG_NormalGL.png
+- Assets/Textures/hex/hex_base_border_mask_0.png
+- Assets/Textures/common/Foil003_1K-PNG_AmbientOcclusion.png
+- Assets/Textures/common/Metal021_1K_NormalGL.png
+- Assets/Textures/common/MetalPlates004_1K-PNG_NormalGL.png
+- Assets/Textures/common/Concrete034_1K_Color.png
+- Assets/Textures/circle.png
+- Assets/Components/line_renderer/default.png
+- Assets/Textures/line/dash_2.png
+- Assets/Textures/common/MetalPlates004_1K-PNG_Color.png
+- Assets/Textures/hex/hex_pieces/hex_piece_normal_gl.png
+- Assets/Textures/hex/hex_pieces/hex_piece_roughness.png
+- Assets/Textures/flowmaps/flowmap_0.png
+- Assets/Textures/fx/clouds.png
+- Assets/Textures/hex/hex_piece_center_mask.png
+- Assets/Textures/fx/fx_3_sharp.png
+- Assets/Textures/fx/fx_4.png
+- Assets/Textures/common/Concrete017_1K_Color.png
+- Assets/Textures/common/Metal046A_1K-PNG_NormalGL.png
+- Assets/Textures/hex/hex_piece_color_0_mask.png
+- Assets/Textures/common/Fabric061_1K-PNG_NormalGL.png
+- Assets/Textures/common/Concrete025_1K_Color.png
+- Assets/Textures/common/Fabric061_1K-PNG_Color.png
+- Assets/Textures/fx/dashed_lines.png
+- Assets/Textures/fx/fx_1.png
+- Assets/Textures/common/Concrete025_1K_NormalGL.png
+- Assets/Textures/common/Concrete025_1K_AmbientOcclusion.png
+- Assets/Textures/fx/lava.jpg
+- Assets/Textures/hex/hex_pieces/hex_piece_diffuse.png
+- Assets/Textures/common/Foil003_1K-PNG_Color.png
+- Assets/Textures/common/MetalPlates004_1K-PNG_Roughness.png
+- Assets/Textures/common/Metal046A_1K-PNG_Color.png
+- Assets/Textures/hex/hex_piece_specular.png
+- Assets/Textures/hex/hex_piece_color_1_mask.png
+- Assets/Textures/common/Concrete034_1K_NormalGL.png
+- Assets/Textures/line/dash_3.png
+- Assets/Textures/common/Foil003_1K-PNG_Roughness.png
+- Assets/Textures/common/MetalPlates002_1K_NormalGL.png
+- Assets/Textures/fx/bubbles.png
+- Assets/Textures/hex/hex_pieces/hex_piece_ao.png
+- Assets/Textures/fx/fx_2.png
+- Assets/Textures/flowmaps/flowmap_2.png
+- Assets/Textures/hex/hex_base_opacity_mask_0.png
+- Assets/Textures/common/Concrete017_1K_NormalGL.png
+- Assets/Textures/hex/hex_piece_color.png
+- Assets/Textures/fx/fx_6.png
+- Assets/Textures/fx/fx_0.png
+- Assets/Textures/hex/hex_piece_emission.png
+Dependencies: []

@@ -1,0 +1,48 @@
+ManifestFileVersion: 0
+CRC: 1435270030
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d55cac70682323d1067cca717e30a0bf
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d55cac70682323d1067cca717e30a0bf
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Textures/cards/decks/default/default_outline_mask.png
+- Assets/Textures/cards/decks/default/default_smoothness_front_v2.png
+- Assets/Textures/cards/decks/default/default_front_fx_mask.png
+- Assets/Textures/cards/art/card_art_5.png
+- Assets/Textures/cards/art/card_art_7.png
+- Assets/Textures/cards/art/card_default_art.png
+- Assets/Textures/cards/decks/default/default_front.png
+- Assets/Textures/cards/decks/style_0/style_0_smoothness_front.png
+- Assets/Textures/cards/art/card_art_1.png
+- Assets/Textures/cards/art/card_art_10.png
+- Assets/Textures/cards/decks/style_0/style_0_smoothness_back.png
+- Assets/Textures/cards/decks/default/default_art_mask.png
+- Assets/Textures/cards/art/card_art_9.png
+- Assets/Textures/cards/decks/default/default_back.png
+- Assets/Textures/cards/art/card_art_2.png
+- Assets/Textures/cards/decks/style_0/style_0_art_vmask.png
+- Assets/Textures/cards/art/card_art_3.png
+- Assets/Textures/cards/art/card_art_4.png
+- Assets/Textures/cards/decks/style_0/style_0_over_mask.png
+- Assets/Textures/cards/art/card_art_6.png
+- Assets/Textures/cards/decks/default/default_over_mask.png
+- Assets/Textures/cards/decks/default/default_smoothness_back_v2.png
+- Assets/Textures/cards/decks/default/default_back_fx_mask.png
+- Assets/Textures/cards/decks/style_0/style_0_front.png
+- Assets/Textures/cards/decks/default/default_art_vmask.png
+- Assets/Textures/cards/art/card_art_8.png
+- Assets/Textures/cards/decks/style_0/style_0_back.png
+- Assets/Textures/cards/decks/style_0/style_0_art_mask.png
+- Assets/Textures/cards/decks/style_0/style_0_front_fx_mask.png
+Dependencies: []

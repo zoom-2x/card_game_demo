@@ -1,0 +1,239 @@
+using System.Collections;
+using System.Collections.Generic;
+
+using UnityEngine;
+using gc_components;
+
+using CardGame.Data;
+using CardGame.Mono;
+using CardGame.Animation;
+
+namespace CardGame.Managers
+{
+    public enum GameObjectType
+    {
+        CONTAINER = 0,
+        CARD = 1,
+        PLACEHOLDER = 2,
+        HEX_BASE = 3,
+        HEX_TILE = 4,
+        HEX_TOKEN = 5,
+        HEX_TILE_LINK = 6,
+        HEX_REGION_BORDER = 7,
+        HEX_REGION_BORDER_V2 = 8,
+        DEBUG_POINT = 9,
+        COUNT = 10 
+    }
+
+    public class MemoryManager
+    {
+        const int MIN_BATCH_SIZE = 10;
+
+        int[] batch_count = new int[(int) GameObjectType.COUNT];
+        Queue<GameObject>[] object_cache = new Queue<GameObject>[(int) GameObjectType.COUNT];
+
+        Queue<StackTransferAnimation> stack_transfer_animation_cache = new Queue<StackTransferAnimation>();
+        Queue<TransferAnimation> transfer_animation_cache = new Queue<TransferAnimation>();
+        Queue<Interpolator> interpolator_cache = new Queue<Interpolator>();
+
+        public Dictionary<string, CardContainerMono> containers = new Dictionary<string, CardContainerMono>();
+        public Link[,] container_links = new Link[2, 9];
+
+        ushort id_counter = 1;
+        Transform cache = null;
+
+        public MemoryManager()
+        {
+            for (int i = 0; i < object_cache.Length; ++i)
+            {
+                batch_count[i] = 0;
+                object_cache[i] = new Queue<GameObject>();
+            }
+        }
+
+        public void destroy()
+        {
+            for (int i = 0; i < object_cache.Length; ++i)
+            {
+                foreach (GameObject obj in object_cache[i])
+                {
+                    if (obj != null)
+                        Object.Destroy(obj);
+                }
+            }
+        }
+
+        public GameObject _get_object(GameObjectType type, string prefab_name)
+        {
+            int type_index = (int) type - 1;
+            GameObject obj = null;
+            Queue<GameObject> q = object_cache[type_index];
+
+            if (cache == null)
+            {
+                GameObject cache_obj = GameObject.Find("CACHE");
+
+                if (cache_obj != null)
+                    cache = cache_obj.transform;
+                else
+                    Debug.LogWarning("MemoryManager: Missing cache object !");
+            }
+
+            if (q.Count == 0)
+            {
+                GameObject prefab = GameSystems.asset_manager.get_prefab(prefab_name);
+
+                if (prefab == null)
+                    return null;
+
+                // First batch allocation.
+                if (batch_count[type_index] == 0)
+                    batch_count[type_index] = MIN_BATCH_SIZE;
+                else
+                {
+                    // batch_count[type_index] = batch_count[type_index] << 1;
+                    batch_count[type_index] = batch_count[type_index] + MIN_BATCH_SIZE;
+                    Debug.Log($"Batch increase: {type_index} / {batch_count[type_index]}");
+                }
+
+                // Object batch allocation.
+                for (int i = 0; i < batch_count[type_index]; ++i)
+                {
+                    obj = Object.Instantiate(prefab);
+
+                    obj.SetActive(false);
+                    obj.transform.parent = cache;
+                    obj.transform.localPosition = Vector3.zero;
+                    // obj.transform.rotation = Quaternion.identity;
+
+                    q.Enqueue(obj);
+                }
+            }
+
+            obj = q.Dequeue();
+            obj.SetActive(true);
+
+            return obj;
+        }
+
+        public void return_object(GameObject obj, GameObjectType type)
+        {
+            int type_index = (int) type - 1;
+            Queue<GameObject> q = object_cache[type_index];
+
+            obj.SetActive(false);
+            obj.transform.parent = cache;
+            obj.transform.localPosition = Vector3.zero;
+            obj.transform.rotation = Quaternion.identity;
+
+            q.Enqueue(obj);
+        }
+
+        // NOTE(gabic): Nefolosit.
+        public CardContainerMono create_card_container()
+        {
+            GameObject obj = _get_object(GameObjectType.CONTAINER, "Container");
+            CardContainerMono res = obj.GetComponent<CardContainerMono>();
+
+            res.id = "container_" + id_counter++;
+            // res.transform.parent = null;
+
+            return res;
+        }
+
+        public Transform create_placeholder(PlayerID id)
+        {
+            GameObject res = _get_object(GameObjectType.PLACEHOLDER, "Placeholder");
+
+            res.layer = Constants.LAYER_PLAYER[(int) id];
+            // res.transform.parent = null;
+
+            return res.transform;
+        }
+
+        // ----------------------------------------------------------------------------------
+        // -- Animations.
+        // ----------------------------------------------------------------------------------
+
+        public StackTransferAnimation aquire_stack_transfer_animation()
+        {
+            if (stack_transfer_animation_cache.Count == 0)
+                stack_transfer_animation_cache.Enqueue(new StackTransferAnimation());
+
+            return stack_transfer_animation_cache.Dequeue();
+        }
+
+        public void release_stack_transfer_animation(StackTransferAnimation a)
+        {
+            if (a == null)
+                return;
+
+            Debug.Log("[MemoryManager]: StackTransferAnimation released.");
+            stack_transfer_animation_cache.Enqueue(a);
+        }
+
+        public TransferAnimation aquire_transfer_animation()
+        {
+            if (transfer_animation_cache.Count == 0)
+                transfer_animation_cache.Enqueue(new TransferAnimation());
+
+            TransferAnimation res = transfer_animation_cache.Dequeue();
+            res.reset();
+
+            return res;
+        }
+
+        public void release_transfer_animation(TransferAnimation a)
+        {
+            if (a == null)
+                return;
+
+            Debug.Log("[MemoryManager]: TransferAnimation released.");
+            transfer_animation_cache.Enqueue(a);
+        }
+
+        // ----------------------------------------------------------------------------------
+        // -- Map objects.
+        // ----------------------------------------------------------------------------------
+
+        public Transform aquire_hex_base()
+        {
+            GameObject obj = _get_object(GameObjectType.HEX_BASE, "hex_base");
+            return obj.transform;
+        }
+
+        public Transform aquire_hex_tile()
+        {
+            GameObject obj = _get_object(GameObjectType.HEX_TILE, "hex_tile");
+            return obj.transform;
+        }
+
+        public ProceduralLine aquire_hex_tile_link()
+        {
+            GameObject obj = _get_object(GameObjectType.HEX_TILE_LINK, "tile_link");
+            return obj.GetComponent<ProceduralLine>();
+        }
+
+        public StraightLine aquire_hex_region_border()
+        {
+            GameObject obj = _get_object(GameObjectType.HEX_REGION_BORDER, "region_border");
+            return obj.GetComponent<StraightLine>();
+        }
+
+        public ProceduralLine aquire_hex_region_border_v2()
+        {
+            GameObject obj = _get_object(GameObjectType.HEX_REGION_BORDER_V2, "region_border_curved");
+            return obj.GetComponent<ProceduralLine>();
+        }
+
+        // -----------------------------------------------------------
+        // -- Debug prefabs.
+        // -----------------------------------------------------------
+        
+        public Transform aquire_debug_point()
+        {
+            GameObject obj = _get_object(GameObjectType.DEBUG_POINT, "debug_point");
+            return obj.transform;
+        }
+    }
+}

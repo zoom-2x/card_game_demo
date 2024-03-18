@@ -1,0 +1,543 @@
+.panel {
+    background-color: rgb(40, 56, 71);
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-left-color: rgb(54, 72, 87);
+    border-right-color: rgb(54, 72, 87);
+    border-top-color: rgb(54, 72, 87);
+    border-bottom-color: rgb(54, 72, 87);
+    border-top-width: 1px;
+    display: none;
+}
+
+.editor-button {
+    background-image: url('project://database/Assets/Textures/ui_editor/ui_button_bkg.png?fileID=2800000&guid=c7ab291aade5f9b4fb6bfeb460e21533&type=3#ui_button_bkg');
+    border-left-color: rgb(24, 25, 28);
+    border-right-color: rgb(24, 25, 28);
+    border-top-color: rgb(24, 25, 28);
+    border-bottom-color: rgb(24, 25, 28);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -unity-font-style: normal;
+    color: rgb(119, 165, 186);
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    margin-top: 0;
+    background-color: rgb(22, 34, 41);
+}
+
+.editor-button__vertical {
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.editor-button__horizontal {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 5px;
+    margin-top: 0;
+}
+
+.editor-button__last {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.editor-button:hover {
+    border-color: rgb(200, 200, 200);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    background-image: url('project://database/Assets/Textures/ui_editor/ui_button_over_bkg.png?fileID=2800000&guid=6bfcb547d122b024886ea2d303a283e1&type=3#ui_button_over_bkg');
+    border-left-color: rgb(24, 25, 28);
+    border-right-color: rgb(24, 25, 28);
+    border-top-color: rgb(24, 25, 28);
+    border-bottom-color: rgb(24, 25, 28);
+}
+
+.editor-button:active {
+    background-image: url('project://database/Assets/Textures/ui_editor/ui_button_pressed_bkg.png?fileID=2800000&guid=081db3941118c9c4784e25d9217e3df6&type=3#ui_button_pressed_bkg');
+}
+
+.editor-button.selected {
+    background-image: url('project://database/Assets/Textures/ui_editor/ui_button_pressed_bkg.png?fileID=2800000&guid=081db3941118c9c4784e25d9217e3df6&type=3#ui_button_pressed_bkg');
+}
+
+.editor-control {
+    flex-direction: column;
+    flex-grow: 1;
+    --unity-cursor-color: rgb(255, 255, 255);
+    flex-shrink: 1;
+    margin-left: 0;
+    margin-right: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.editor-control .unity-base-field__input {
+    background-color: rgb(26, 31, 43);
+    border-left-color: rgb(58, 73, 94);
+    border-right-color: rgb(58, 73, 94);
+    border-top-color: rgb(58, 73, 94);
+    border-bottom-color: rgb(58, 73, 94);
+    color: rgb(146, 166, 192);
+    -unity-font-style: normal;
+    font-size: 14px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    flex-grow: 1;
+}
+
+.editor-control:focus .unity-base-field__input {
+    border-left-color: rgb(96, 123, 144);
+    border-right-color: rgb(96, 123, 144);
+    border-top-color: rgb(96, 123, 144);
+    border-bottom-color: rgb(96, 123, 144);
+}
+
+.editor-list-view {
+    background-color: rgb(40, 56, 71);
+    border-left-color: rgb(59, 82, 101);
+    border-right-color: rgb(59, 82, 101);
+    border-top-color: rgb(59, 82, 101);
+    border-bottom-color: rgb(59, 82, 101);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.unity-scroller {
+    width: 14px;
+}
+
+.unity-scroller__low-button {
+    width: 14px;
+    height: 14px;
+    background-color: rgb(161, 178, 192);
+    border-left-color: rgb(24, 25, 28);
+    border-right-color: rgb(24, 25, 28);
+    border-top-color: rgb(24, 25, 28);
+    border-bottom-color: rgb(24, 25, 28);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.unity-scroller__high-button {
+    width: 14px;
+    height: 14px;
+    border-left-color: rgb(24, 25, 28);
+    border-right-color: rgb(24, 25, 28);
+    border-top-color: rgb(24, 25, 28);
+    border-bottom-color: rgb(24, 25, 28);
+    background-color: rgb(161, 178, 192);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.unity-scroller--vertical > .unity-scroller__slider {
+    width: 14px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    min-width: 14px;
+}
+
+.unity-slider__input {
+    width: 14px;
+}
+
+.unity-base-slider--vertical .unity-base-slider__drag-container {
+}
+
+.unity-scroller--vertical .unity-base-slider__tracker {
+    width: 14px;
+    background-color: rgb(54, 72, 87);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.unity-scroller--vertical .unity-base-slider__dragger {
+    background-color: rgb(102, 119, 132);
+    width: 8px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.unity-base-slider--horizontal .unity-slider-int {
+}
+
+.unity-base-slider--horizontal .unity-base-slider__tracker {
+    background-color: rgb(27, 53, 77);
+    border-left-color: rgb(58, 73, 87);
+    border-right-color: rgb(58, 73, 87);
+    border-top-color: rgb(58, 73, 87);
+    border-bottom-color: rgb(58, 73, 87);
+}
+
+.unity-base-slider--horizontal .unity-base-slider__dragger {
+    background-color: rgb(16, 31, 51);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    width: 10px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.unity-base-slider--horizontal .unity-base-slider__text-field {
+    width: 32px;
+    height: 32px;
+}
+
+.unity-base-slider--horizontal .unity-base-slider__text-field .unity-base-field__input {
+    background-color: rgb(26, 31, 43);
+    border-left-color: rgb(58, 73, 94);
+    border-right-color: rgb(58, 73, 94);
+    border-top-color: rgb(58, 73, 94);
+    border-bottom-color: rgb(58, 73, 94);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: rgb(146, 166, 192);
+}
+
+.unity-label {
+    margin-bottom: 5px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: rgb(161, 178, 192);
+    -unity-font-definition: url('project://database/Assets/Fonts/Generated/Sansation-T/Sansation-Regular%20SDF.asset?fileID=11400000&guid=96df9c5ee645c1741b11e4d1c7065bdd&type=2#Sansation-Regular SDF');
+    flex-grow: 0;
+}
+
+#unity-content-container {
+    height: 44px;
+    overflow: visible;
+}
+
+.unity-scroll-view__content-container {
+    height: 44px;
+    overflow: visible;
+}
+
+.unity-collection-view__item {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    margin-bottom: 4px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.unity-collection-view__item .unity-list-view__item {
+}
+
+.unity-collection-view__item:hover {
+    background-color: rgb(32, 45, 55);
+    border-left-color: rgb(87, 108, 125);
+    border-right-color: rgb(87, 108, 125);
+    border-top-color: rgb(87, 108, 125);
+    border-bottom-color: rgb(87, 108, 125);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.unity-collection-view__item--selected {
+    background-color: rgb(32, 45, 55);
+    border-left-color: rgb(87, 108, 125);
+    border-right-color: rgb(87, 108, 125);
+    border-top-color: rgb(87, 108, 125);
+    border-bottom-color: rgb(87, 108, 125);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.region-list-entry {
+    flex-grow: 0;
+    flex-direction: row;
+    height: 42px;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: auto;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.region-list-entry .color {
+    width: 32px;
+    background-color: rgb(82, 94, 91);
+    margin-bottom: 4px;
+    margin-right: 10px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-left-color: rgb(161, 178, 192);
+    border-right-color: rgb(161, 178, 192);
+    border-top-color: rgb(161, 178, 192);
+    border-bottom-color: rgb(161, 178, 192);
+}
+
+.region-list-entry .name {
+    -unity-text-align: middle-left;
+    margin-right: 10px;
+    width: 140px;
+    font-size: 12px;
+}
+
+.region-list-entry.last {
+}
+
+.resource-list-entry {
+    flex-shrink: 1;
+    align-items: center;
+    align-self: auto;
+    justify-content: space-between;
+}
+
+.resource-list-entry:hover {
+}
+
+.resource-list-entry .unity-label {
+    align-items: stretch;
+    align-self: auto;
+    flex-grow: 1;
+    margin-left: 5px;
+}
+
+.resource-list-entry .unity-base-slider {
+    width: 200px;
+}
+
+.resource-list-entry .unity-toggle__checkmark {
+    flex-shrink: 1;
+    width: 20px;
+    flex-grow: 0;
+    border-left-color: rgb(58, 73, 94);
+    border-right-color: rgb(58, 73, 94);
+    border-top-color: rgb(58, 73, 94);
+    border-bottom-color: rgb(58, 73, 94);
+    background-color: rgb(26, 31, 43);
+    height: 20px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.resource-list-entry .unity-toggle:checked .unity-toggle__checkmark {
+    background-color: rgb(74, 106, 140);
+    background-image: none;
+    border-left-width: 6px;
+    border-right-width: 6px;
+    border-top-width: 6px;
+    border-bottom-width: 6px;
+    border-left-color: rgb(26, 31, 43);
+    border-right-color: rgb(26, 31, 43);
+    border-top-color: rgb(26, 31, 43);
+    border-bottom-color: rgb(26, 31, 43);
+}
+
+.resource {
+    width: 32px;
+    height: 32px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left-color: rgb(57, 78, 91);
+    border-right-color: rgb(57, 78, 91);
+    border-top-color: rgb(57, 78, 91);
+    border-bottom-color: rgb(57, 78, 91);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    align-items: stretch;
+    flex-grow: 0;
+}
+
+.resource-blue {
+    background-image: url('project://database/Assets/Textures/ui/resources/blue.png?fileID=2800000&guid=156eb53ac312377429b61483a69d9f2a&type=3#blue');
+}
+
+.resource-red {
+    background-image: url('project://database/Assets/Textures/ui/resources/red.png?fileID=2800000&guid=01e746530ffa9e84099f943bc280c73a&type=3#red');
+}
+
+.resource-gold {
+    background-image: url('project://database/Assets/Textures/ui/resources/gold.png?fileID=2800000&guid=adfef4db058f3fd47bf29320618c0b28&type=3#gold');
+}
+
+.resource-green {
+    background-image: url('project://database/Assets/Textures/ui/resources/green.png?fileID=2800000&guid=bf751cada9d27b84d80f1adddb930f46&type=3#green');
+}
+
+.resource-purple {
+    background-image: url('project://database/Assets/Textures/ui/resources/purple.png?fileID=2800000&guid=a8132f3321a92814ebd57564e59fba8f&type=3#purple');
+}
+
+.resource-view-list {
+}
+
+.resource-view {
+    flex-direction: row;
+    margin-right: 2px;
+}
+
+.resource-view .resource {
+}
+
+.resource-view .unity-label {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.row {
+    flex-grow: 1;
+    margin-bottom: 5px;
+    flex-shrink: 1;
+}
+
+.row-vertical {
+    flex-grow: 1;
+}
+
+.row-horizontal {
+    flex-grow: 1;
+    flex-direction: row;
+    flex-shrink: 1;
+}
+
+.row-last {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.last-child {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.notification {
+    font-size: 12px;
+    color: rgb(192, 83, 163);
+    -unity-font-style: normal;
+}
+
+.secondary-panel {
+    border-left-color: rgb(58, 73, 94);
+    border-right-color: rgb(58, 73, 94);
+    border-top-color: rgb(58, 73, 94);
+    border-bottom-color: rgb(58, 73, 94);
+    border-left-width: 1px;
+}
+
+.link-list-entry {
+    height: 42px;
+}
+
+.link-list-entry__label {
+    -unity-text-align: middle-left;
+    flex-grow: 1;
+    padding-left: 14px;
+    padding-right: 14px;
+}

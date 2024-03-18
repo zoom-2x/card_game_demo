@@ -1,0 +1,85 @@
+ManifestFileVersion: 0
+CRC: 1020684555
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 403681ccf2b79fe2ae0001956161c772
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a84b5dfa163139d6b480145d37ea0d9d
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 403681ccf2b79fe2ae0001956161c772
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 19001, guid: 0000000000000000e000000000000000, type: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.FaceInfo_Legacy
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.FontAssetCreationSettings
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.KerningTable
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_Character
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_FontFeatureTable
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_FontWeightPair
+- AssemblyName: UnityEngine.TextCoreFontEngineModule
+  ClassName: UnityEngine.TextCore.FaceInfo
+- AssemblyName: UnityEngine.TextCoreFontEngineModule
+  ClassName: UnityEngine.TextCore.Glyph
+- AssemblyName: UnityEngine.TextCoreFontEngineModule
+  ClassName: UnityEngine.TextCore.GlyphMetrics
+- AssemblyName: UnityEngine.TextCoreFontEngineModule
+  ClassName: UnityEngine.TextCore.GlyphRect
+- AssemblyName: UnityEngine.TextCoreTextEngineModule
+  ClassName: UnityEngine.TextCore.Text.Character
+- AssemblyName: UnityEngine.TextCoreTextEngineModule
+  ClassName: UnityEngine.TextCore.Text.FontAssetCreationEditorSettings
+- AssemblyName: UnityEngine.TextCoreTextEngineModule
+  ClassName: UnityEngine.TextCore.Text.FontFeatureTable
+- AssemblyName: UnityEngine.TextCoreTextEngineModule
+  ClassName: UnityEngine.TextCore.Text.FontWeightPair
+Assets:
+- Assets/Fonts/Generated/Sansation-TMP/Sansation-Bold SDF TMP.asset
+- Assets/Fonts/Generated/Sansation-TMP/Sansation-LightItalic SDF TMP.asset
+- Assets/Fonts/Generated/Blade-TMP/credits.txt
+- Assets/Fonts/Base/blade_runner_movie_font/BLADRMF_.TTF
+- Assets/Fonts/Base/Sansation/Sansation-BoldItalic.ttf
+- Assets/Fonts/Generated/Blade-TMP/BLADRMF_ SDF.asset
+- Assets/Fonts/Generated/Sansation-T/Sansation-Light SDF.asset
+- Assets/Fonts/Generated/Sansation-T/Sansation-LightItalic SDF.asset
+- Assets/Fonts/Generated/Sansation-TMP/SIL Open Font License.txt
+- Assets/Fonts/Base/Sansation/Sansation-Regular.ttf
+- Assets/Fonts/Generated/Sansation-T/Sansation-BoldItalic SDF.asset
+- Assets/Fonts/Generated/Sansation-TMP/Sansation-Italic SDF TMP.asset
+- Assets/Fonts/Generated/Sansation-TMP/Sansation-BoldItalic SDF TMP.asset
+- Assets/Fonts/Base/Sansation/SIL Open Font License.txt
+- Assets/Fonts/Generated/Sansation-TMP/Sansation-Light SDF TMP.asset
+- Assets/Fonts/Generated/Sansation-T/Sansation-Regular SDF.asset
+- Assets/Fonts/Base/Sansation/Sansation-Light.ttf
+- Assets/Fonts/Base/Sansation/Sansation-Italic.ttf
+- Assets/Fonts/Base/Sansation/Sansation-LightItalic.ttf
+- Assets/Fonts/Base/Sansation/Sansation-Bold.ttf
+- Assets/Fonts/Generated/Sansation-T/Sansation-Italic SDF.asset
+- Assets/Fonts/Generated/Sansation-TMP/Sansation-Regular SDF TMP.asset
+- Assets/Fonts/Generated/Sansation-T/Sansation-Bold SDF.asset
+Dependencies:
+- I:/Workspace/Projects/unity/card_game/Assets/assetbundles/shaders

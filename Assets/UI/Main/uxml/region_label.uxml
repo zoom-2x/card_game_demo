@@ -1,0 +1,29 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Main/uss/ui-common.uss?fileID=7433441132597879392&amp;guid=c6e4c107ba7fda242b6ba0281f9e6a44&amp;type=3#ui-common" />
+    <ui:VisualElement name="root" class="region-label">
+        <ui:Label tabindex="-1" text="REGION NAME" display-tooltip-when-elided="true" name="name" class="region-label-name" />
+        <ui:VisualElement name="resources" class="region-label-resources">
+            <ui:VisualElement name="blue" class="region-label-resource">
+                <ui:VisualElement name="icon" class="region-label-resource__icon region-label-resource__icon_blue" />
+                <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" name="value" class="region-label-resource__value" />
+            </ui:VisualElement>
+            <ui:VisualElement name="red" class="region-label-resource">
+                <ui:VisualElement name="icon" class="region-label-resource__icon region-label-resource__icon_red" />
+                <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" name="value" class="region-label-resource__value" />
+            </ui:VisualElement>
+            <ui:VisualElement name="green" class="region-label-resource">
+                <ui:VisualElement name="icon" class="region-label-resource__icon region-label-resource__icon_green" />
+                <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" name="value" class="region-label-resource__value" />
+            </ui:VisualElement>
+            <ui:VisualElement name="purple" class="region-label-resource">
+                <ui:VisualElement name="icon" class="region-label-resource__icon region-label-resource__icon_purple" />
+                <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" name="value" class="region-label-resource__value" />
+            </ui:VisualElement>
+            <ui:VisualElement name="gold" class="region-label-resource">
+                <ui:VisualElement name="icon" class="region-label-resource__icon region-label-resource__icon_gold" />
+                <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" name="value" class="region-label-resource__value" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label tabindex="-1" text="Test information" display-tooltip-when-elided="true" name="extra_info" style="background-color: rgb(25, 43, 64); height: 20px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 6px; padding-right: 6px; padding-top: 10px; padding-bottom: 11px; -unity-font-definition: url(&apos;project://database/Assets/Fonts/Generated/Sansation-T/Sansation-Light%20SDF.asset?fileID=11400000&amp;guid=1e55e86c44a8c0748b13a2b52f7b8a30&amp;type=2#Sansation-Light SDF&apos;); font-size: 12px; color: rgb(104, 156, 203); -unity-text-align: middle-left; border-left-color: rgb(37, 57, 74); border-right-color: rgb(37, 57, 74); border-top-color: rgb(37, 57, 74); border-bottom-color: rgb(37, 57, 74); border-top-width: 1px;" />
+    </ui:VisualElement>
+</ui:UXML>

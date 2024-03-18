@@ -1,0 +1,112 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Main/uss/ui.uss?fileID=7433441132597879392&amp;guid=19640b8bc78d8be4e912ded3a459b4fb&amp;type=3#ui" />
+    <ui:VisualElement name="Root" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:VisualElement name="Header" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); width: 100%; height: auto; align-self: auto; justify-content: flex-start; align-items: center; flex-direction: row; flex-wrap: nowrap;">
+            <ui:VisualElement name="Left" style="flex-grow: 0; background-color: rgba(200, 42, 42, 0); width: 76px; height: 100%; padding-left: 0; padding-right: 0; margin-left: 8px; margin-right: 8px; margin-top: 16px;">
+                <ui:VisualElement name="vp" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Textures/ui/blue_vp.png?fileID=21300000&amp;guid=f9e2da76c038c1b4d934bace02fcd542&amp;type=3#blue_vp&apos;); width: 76px; height: 74px;" />
+                <ui:VisualElement name="influence" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); width: 76px; height: 36px; background-image: url(&apos;project://database/Assets/Textures/ui/blue_influence.png?fileID=21300000&amp;guid=8724c07e2689d8c4fb29ebc921d6223e&amp;type=3#blue_influence&apos;);" />
+                <ui:VisualElement name="diamonds" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); width: 76px; height: 36px; background-image: url(&apos;project://database/Assets/Textures/ui/blue_credits.png?fileID=21300000&amp;guid=39a93609bf15ac048b8aefb9bc922062&amp;type=3#blue_credits&apos;);" />
+                <ui:VisualElement name="action_points" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); width: 76px; height: 36px; background-image: url(&apos;project://database/Assets/Textures/ui/blue_action_points.png?fileID=21300000&amp;guid=450504516fecc604f9ec9a3fb2069928&amp;type=3#blue_action_points&apos;);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Center" style="flex-grow: 1; background-color: rgba(68, 219, 59, 0); height: 100%; width: 460px; background-image: none; -unity-background-scale-mode: stretch-to-fill; align-items: center;">
+                <ui:VisualElement name="base" style="flex-grow: 0; background-color: rgba(217, 197, 56, 0); width: 460px; height: 120px; top: 0; bottom: 0; align-items: auto; background-image: url(&apos;project://database/Assets/Textures/ui/center.png?fileID=21300000&amp;guid=f9460f352f14d914ba874d488dd2cb29&amp;type=3#center&apos;);">
+                    <ui:VisualElement name="top" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); width: 100%; height: 40px; justify-content: center; align-items: center;">
+                        <ui:Label tabindex="-1" text="CURRENT PHASE" display-tooltip-when-elided="true" name="current_phase_label" style="width: 250px; -unity-text-align: upper-center; -unity-font: url(&apos;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&apos;); -unity-font-style: bold; color: rgb(100, 231, 88);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="bottom" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 100%; flex-direction: row; margin-top: 14px;">
+                        <ui:Label tabindex="-1" text="PLAYER A" display-tooltip-when-elided="true" style="-unity-font-style: bold; color: rgb(58, 212, 241); font-size: 18px; height: 30px; -unity-text-align: middle-center; width: 190px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+                        <ui:VisualElement name="current_round" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); width: 68px; height: 64px; margin-left: 30px; margin-right: 30px; -unity-text-align: middle-center;">
+                            <ui:Label tabindex="-1" text="ROUND" display-tooltip-when-elided="true" style="-unity-font-style: bold; font-size: 8px; -unity-text-align: middle-center; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; color: rgb(92, 209, 175);" />
+                            <ui:Label tabindex="-1" text="14" display-tooltip-when-elided="true" name="current_round_label" style="-unity-font-style: bold; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; -unity-text-align: upper-center; font-size: 24px; color: rgb(255, 197, 129);" />
+                        </ui:VisualElement>
+                        <ui:Label tabindex="-1" text="PLAYER B" display-tooltip-when-elided="true" style="width: 190px; height: 30px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 10px; padding-right: 0; padding-top: 0; padding-bottom: 0; font-size: 18px; -unity-font-style: bold; color: rgb(233, 109, 58); -unity-text-align: middle-center;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Right" style="flex-grow: 0; background-color: rgba(69, 161, 219, 0); width: 76px; height: 100%; margin-left: 8px; margin-right: 8px; margin-top: 16px;">
+                <ui:VisualElement name="vp" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Textures/ui/red_vp.png?fileID=21300000&amp;guid=dfec344d236f57d46a575fac18f6e1ae&amp;type=3#red_vp&apos;); width: 76px; height: 74px;" />
+                <ui:VisualElement name="influence" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); width: 76px; height: 36px; background-image: url(&apos;project://database/Assets/Textures/ui/red_influence.png?fileID=21300000&amp;guid=8a592b0836a5af34da3afacbdd7dbd2e&amp;type=3#red_influence&apos;);" />
+                <ui:VisualElement name="diamonds" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Textures/ui/red_credits.png?fileID=21300000&amp;guid=c9225ae6fb701b441a60a3d38e1c044f&amp;type=3#red_credits&apos;); width: 76px; height: 36px;" />
+                <ui:VisualElement name="action_points" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); width: 76px; height: 36px; background-image: url(&apos;project://database/Assets/Textures/ui/red_action_points.png?fileID=21300000&amp;guid=a173372de7dfc134e90f379c3897d288&amp;type=3#red_action_points&apos;);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="root" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-direction: row; justify-content: center;">
+        <ui:VisualElement name="left-panel" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); align-items: flex-end; justify-content: flex-start; align-self: flex-start;">
+            <ui:VisualElement name="attribute-panel" class="attribute-panel" style="flex-direction: column; align-self: flex-end;">
+                <ui:VisualElement name="attribute-row" class="attribute-row" style="background-color: rgba(0, 0, 0, 0);">
+                    <ui:VisualElement name="cell" class="attribute-cell">
+                        <ui:VisualElement name="icon" class="attribute-icon attribute-expansion-icon attribute-blue-icon" style="flex-grow: 0; justify-content: flex-start; align-items: auto;" />
+                        <ui:Label tabindex="-1" text="5" display-tooltip-when-elided="true" class="attribute-text" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="cell" class="attribute-cell">
+                        <ui:VisualElement name="icon" class="attribute-icon attribute-red-icon" style="flex-grow: 0; justify-content: flex-start; align-items: auto;" />
+                        <ui:Label tabindex="-1" text="5" display-tooltip-when-elided="true" class="attribute-text" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="cell" class="attribute-cell">
+                        <ui:VisualElement name="icon" class="attribute-icon attribute-green-icon" style="flex-grow: 0; justify-content: flex-start; align-items: auto;" />
+                        <ui:Label tabindex="-1" text="5" display-tooltip-when-elided="true" class="attribute-text" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="cell" class="attribute-cell">
+                        <ui:VisualElement name="icon" class="attribute-icon attribute-purple-icon" style="flex-grow: 0; justify-content: flex-start; align-items: auto;" />
+                        <ui:Label tabindex="-1" text="5" display-tooltip-when-elided="true" class="attribute-text" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="cell" class="attribute-cell attribute-cell-last">
+                        <ui:VisualElement name="icon" class="attribute-icon attribute-gold-icon" style="flex-grow: 0; justify-content: flex-start; align-items: auto;" />
+                        <ui:Label tabindex="-1" text="5" display-tooltip-when-elided="true" class="attribute-text" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="attribute-panel" class="attribute-panel" style="top: -4px; flex-direction: column; align-self: flex-end;">
+                <ui:VisualElement name="attribute-row" class="attribute-row" style="background-color: rgba(0, 0, 0, 0);">
+                    <ui:VisualElement name="cell" class="attribute-cell">
+                        <ui:VisualElement name="icon" class="attribute-icon attribute-expansion-icon" style="flex-grow: 0; justify-content: flex-start; align-items: auto;" />
+                        <ui:Label tabindex="-1" text="5" display-tooltip-when-elided="true" class="attribute-text" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="cell" class="attribute-cell attribute-cell-last">
+                        <ui:VisualElement name="icon" class="attribute-icon attribute-defense-icon" style="flex-grow: 0; justify-content: flex-start; align-items: auto;" />
+                        <ui:Label tabindex="-1" text="5" display-tooltip-when-elided="true" class="attribute-text" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="right-panel" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); align-items: flex-end; justify-content: flex-start; align-self: flex-start;">
+            <ui:VisualElement name="attribute-panel" class="attribute-panel" style="flex-direction: column; align-self: flex-end;">
+                <ui:VisualElement name="attribute-row" class="attribute-row" style="background-color: rgba(0, 0, 0, 0);">
+                    <ui:VisualElement name="cell" class="attribute-cell">
+                        <ui:VisualElement name="icon" class="attribute-icon attribute-expansion-icon attribute-blue-icon" style="flex-grow: 0; justify-content: flex-start; align-items: auto;" />
+                        <ui:Label tabindex="-1" text="5" display-tooltip-when-elided="true" class="attribute-text" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="cell" class="attribute-cell">
+                        <ui:VisualElement name="icon" class="attribute-icon attribute-red-icon" style="flex-grow: 0; justify-content: flex-start; align-items: auto;" />
+                        <ui:Label tabindex="-1" text="5" display-tooltip-when-elided="true" class="attribute-text" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="cell" class="attribute-cell">
+                        <ui:VisualElement name="icon" class="attribute-icon attribute-green-icon" style="flex-grow: 0; justify-content: flex-start; align-items: auto;" />
+                        <ui:Label tabindex="-1" text="5" display-tooltip-when-elided="true" class="attribute-text" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="cell" class="attribute-cell">
+                        <ui:VisualElement name="icon" class="attribute-icon attribute-purple-icon" style="flex-grow: 0; justify-content: flex-start; align-items: auto;" />
+                        <ui:Label tabindex="-1" text="5" display-tooltip-when-elided="true" class="attribute-text" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="cell" class="attribute-cell attribute-cell-last">
+                        <ui:VisualElement name="icon" class="attribute-icon attribute-gold-icon" style="flex-grow: 0; justify-content: flex-start; align-items: auto;" />
+                        <ui:Label tabindex="-1" text="5" display-tooltip-when-elided="true" class="attribute-text" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="attribute-panel" class="attribute-panel" style="top: -4px; flex-direction: column; align-self: flex-start;">
+                <ui:VisualElement name="attribute-row" class="attribute-row" style="background-color: rgba(0, 0, 0, 0);">
+                    <ui:VisualElement name="cell" class="attribute-cell">
+                        <ui:VisualElement name="icon" class="attribute-icon attribute-expansion-icon" style="flex-grow: 0; justify-content: flex-start; align-items: auto;" />
+                        <ui:Label tabindex="-1" text="5" display-tooltip-when-elided="true" class="attribute-text" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="cell" class="attribute-cell attribute-cell-last">
+                        <ui:VisualElement name="icon" class="attribute-icon attribute-defense-icon" style="flex-grow: 0; justify-content: flex-start; align-items: auto;" />
+                        <ui:Label tabindex="-1" text="5" display-tooltip-when-elided="true" class="attribute-text" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

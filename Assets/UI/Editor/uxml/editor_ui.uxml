@@ -1,0 +1,43 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="NewMap" src="project://database/Assets/UI/Editor/uxml/new_map_panel.uxml?fileID=9197481963319205126&amp;guid=37bc97b78f3065d4691f2cb87593d7c8&amp;type=3#new_map_panel" />
+    <ui:Template name="SaveLoadMap" src="project://database/Assets/UI/Editor/uxml/save_load_map_panel.uxml?fileID=9197481963319205126&amp;guid=9c717b3cb25f9734d9ff31c9cc01c833&amp;type=3#save_load_map_panel" />
+    <ui:Template name="RegionList" src="project://database/Assets/UI/Editor/uxml/region_list_panel.uxml?fileID=9197481963319205126&amp;guid=5f0b9e9d778777e449fbd075bde15001&amp;type=3#region_list_panel" />
+    <ui:Template name="TilePanel" src="project://database/Assets/UI/Editor/uxml/tile_panel.uxml?fileID=9197481963319205126&amp;guid=8532705e2f1f9c545af5f74a55db4350&amp;type=3#tile_panel" />
+    <ui:Template name="link_list_panel" src="project://database/Assets/UI/Editor/uxml/link_list_panel.uxml?fileID=9197481963319205126&amp;guid=4010fcb01e5315a49a6681b91e62ff49&amp;type=3#link_list_panel" />
+    <ui:Template name="RegionEdit" src="project://database/Assets/UI/Editor/uxml/region_edit_panel.uxml?fileID=9197481963319205126&amp;guid=2ec36cb05a4155d45a84a85c363c95f4&amp;type=3#region_edit_panel" />
+    <ui:Template name="link_edit_panel" src="project://database/Assets/UI/Editor/uxml/link_edit_panel.uxml?fileID=9197481963319205126&amp;guid=8003fccfedd015c4684a88d118f7a794&amp;type=3#link_edit_panel" />
+    <ui:Template name="info_popup" src="project://database/Assets/UI/Main/uxml/popup_info.uxml?fileID=9197481963319205126&amp;guid=37ad4772e3982314c8c75b0a68d0db6f&amp;type=3#popup_info" />
+    <Style src="project://database/Assets/UI/Editor/uss/EditorUI.uss?fileID=7433441132597879392&amp;guid=40219513fba75c343b2289d12d46c11a&amp;type=3#EditorUI" />
+    <Style src="project://database/Assets/UI/Editor/uss/controls.uss?fileID=7433441132597879392&amp;guid=397785c4c5a375b428386aa2b4beb444&amp;type=3#controls" />
+    <Style src="project://database/Assets/UI/Main/uss/ui-common.uss?fileID=7433441132597879392&amp;guid=c6e4c107ba7fda242b6ba0281f9e6a44&amp;type=3#ui-common" />
+    <ui:VisualElement name="root">
+        <ui:VisualElement name="main-menu">
+            <ui:Button text="New Map" display-tooltip-when-elided="true" name="new-map-button" class="editor-button editor-button__horizontal" />
+            <ui:Button text="Save / Load" display-tooltip-when-elided="true" name="save-load-map-button" class="editor-button editor-button__horizontal" />
+            <ui:Button text="Region" display-tooltip-when-elided="true" name="region-button" class="editor-button editor-button__horizontal" />
+            <ui:Button text="Tile" display-tooltip-when-elided="true" name="tile-button" class="editor-button editor-button__horizontal" />
+            <ui:Button text="Links" display-tooltip-when-elided="true" name="links-button" class="editor-button editor-button__horizontal" />
+            <ui:Button text="Main Menu" display-tooltip-when-elided="true" name="main-menu-button" class="editor-button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="settings-area">
+            <ui:VisualElement name="first" class="first" style="width: 450px;">
+                <ui:Instance template="NewMap" name="NewMap" />
+                <ui:Instance template="SaveLoadMap" name="SaveLoadMap" />
+                <ui:Instance template="RegionList" name="RegionList" />
+                <ui:Instance template="TilePanel" name="TilePanel" />
+                <ui:Instance template="link_list_panel" name="link_list_panel" />
+            </ui:VisualElement>
+            <ui:VisualElement name="second" class="second" style="width: 500px;">
+                <ui:Instance template="RegionEdit" name="RegionEdit" />
+                <ui:Instance template="link_edit_panel" name="link_edit_panel" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="status-bar" style="background-color: rgb(40, 56, 71); align-items: flex-start;">
+            <ui:Label tabindex="-1" text="(No map generated)" display-tooltip-when-elided="true" name="map-size" class="first" />
+            <ui:Label tabindex="-1" text="0:0" display-tooltip-when-elided="true" name="coordinates" />
+            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="tile-region" />
+            <ui:Label tabindex="-1" text="Generic message comes here" display-tooltip-when-elided="true" name="message" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Instance template="info_popup" name="popup-info2" class="popup-info" />
+</ui:UXML>

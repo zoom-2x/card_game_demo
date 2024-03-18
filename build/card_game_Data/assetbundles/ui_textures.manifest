@@ -1,0 +1,61 @@
+ManifestFileVersion: 0
+CRC: 141268177
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1991ceab2a39a54313ed92201186c55b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 1991ceab2a39a54313ed92201186c55b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Textures/ui/resources/green.png
+- Assets/Textures/ui/v2/resource_c.png
+- Assets/Textures/ui/resources/blue.png
+- Assets/Textures/ui/region-label-extra-info-bkg.png
+- Assets/Textures/ui/resources/gold.png
+- Assets/Textures/ui/v2/right_vp_panel.png
+- Assets/Textures/ui/v2/left_vp_panel.png
+- Assets/Textures/ui/v2/menu_button_pressed.png
+- Assets/Textures/ui/v2/resource_button_selected.png
+- Assets/Textures/ui/v2/resource_a.png
+- Assets/Textures/ui/resources/purple.png
+- Assets/Textures/ui/resources/label-purple-icon.png
+- Assets/Textures/ui/resources/label-blue-icon.png
+- Assets/Textures/ui/v2/button_highlighted.png
+- Assets/Textures/ui/v2/resource_button.png
+- Assets/Textures/ui/resources/label-gold-icon.png
+- Assets/Textures/ui/v2/resource_button_pressed.png
+- Assets/Textures/ui_editor/ui_button_pressed_bkg.png
+- Assets/Textures/ui/v2/resource_b.png
+- Assets/Textures/ui/v2/left_vp_progress_on.png
+- Assets/Textures/ui/region-label-bkg.png
+- Assets/Textures/ui/v2/progress_bar_on.png
+- Assets/Textures/ui/resources/label-green-icon.png
+- Assets/Textures/ui/region_label_header_bkg.png
+- Assets/Textures/ui/v2/right_vp_progress_on.png
+- Assets/Textures/ui_editor/ui_button_bkg.png
+- Assets/Textures/ui/loader-bkg.png
+- Assets/Textures/ui/resources/label-red-icon.png
+- Assets/Textures/ui/v2/menu_button.png
+- Assets/Textures/ui/res-bkg.png
+- Assets/Textures/ui/v2/button.png
+- Assets/Textures/ui/v2/resource_button_highlighted.png
+- Assets/Textures/ui/v2/round_counter_panel.png
+- Assets/Textures/ui/v2/resource_button_disabled.png
+- Assets/Textures/ui_editor/ui_button_over_bkg.png
+- Assets/Textures/ui/v2/popup_panel.png
+- Assets/Textures/ui/resources/red.png
+- Assets/Textures/ui/v2/progress_bar_panel.png
+- Assets/Textures/ui/v2/menu_button_highlighted.png
+- Assets/Textures/ui/v2/button_pressed.png
+Dependencies: []

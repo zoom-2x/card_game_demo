@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="ResourceList" src="project://database/Assets/UI/Editor/uxml/resource_list.uxml?fileID=9197481963319205126&amp;guid=ee4d5856f81c27f4396b650bbdfdefad&amp;type=3#resource_list" />
+    <Style src="project://database/Assets/UI/Editor/uss/controls.uss?fileID=7433441132597879392&amp;guid=397785c4c5a375b428386aa2b4beb444&amp;type=3#controls" />
+    <ui:VisualElement name="region-edit-panel" class="panel secondary-panel">
+        <ui:VisualElement name="row" class="row-vertical row">
+            <ui:TextField picking-mode="Ignore" label="Color:" name="color" class="editor-control last-child" />
+            <ui:TextField picking-mode="Ignore" label="Name:" name="name" class="editor-control last-child" />
+            <ui:Label tabindex="-1" text="Resource:" display-tooltip-when-elided="true" />
+            <ui:Instance template="ResourceList" name="ResourceList" />
+        </ui:VisualElement>
+        <ui:VisualElement name="row" class="row row-vertical row-last" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:Button text="Update" display-tooltip-when-elided="true" name="update-button" class="editor-button editor-button__vertical" />
+            <ui:Button text="Close" display-tooltip-when-elided="true" name="close-button" class="editor-button editor-button__vertical" style="display: none;" />
+            <ui:Button text="Delete" display-tooltip-when-elided="true" name="delete-button" class="editor-button last-child editor-button__vertical" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

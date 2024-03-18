@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="RegionListItem" src="project://database/Assets/UI/Editor/uxml/RegionListItem.uxml?fileID=9197481963319205126&amp;guid=382f44e14482788439e3ac37161d4a35&amp;type=3#RegionListItem" />
+    <Style src="project://database/Assets/UI/Editor/uss/controls.uss?fileID=7433441132597879392&amp;guid=397785c4c5a375b428386aa2b4beb444&amp;type=3#controls" />
+    <ui:VisualElement name="tile-panel" class="panel">
+        <ui:VisualElement name="row" class="row-vertical row last-child">
+            <ui:ListView focusable="true" name="region-list" virtualization-method="DynamicHeight" show-border="false" class="editor-list-view" />
+            <ui:ScrollView class="editor-list-view" style="height: 100px; display: none;">
+                <ui:Instance template="RegionListItem" name="RegionListItem" />
+                <ui:Instance template="RegionListItem" name="RegionListItem" />
+                <ui:Instance template="RegionListItem" name="RegionListItem" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

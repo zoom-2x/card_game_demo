@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 552551994
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4a1e45109b5c8c13455ae1997a8089aa
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0f00f132ad10da70c743d6a2c9571382
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 4a1e45109b5c8c13455ae1997a8089aa
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 32cec853d2528ef4fa74125ab7146c3c, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Custom/cards/so_library/influence.asset
+- Assets/Custom/cards/so_library/credits.asset
+- Assets/Custom/cards/so_library/propaganda.asset
+Dependencies: []

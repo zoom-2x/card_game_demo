@@ -1,0 +1,35 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Editor/uss/controls.uss?fileID=7433441132597879392&amp;guid=397785c4c5a375b428386aa2b4beb444&amp;type=3#controls" />
+    <ui:VisualElement name="resource-list" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:VisualElement name="blue" class="resource-list-entry row-horizontal row" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:VisualElement name="icon" class="resource-blue resource" />
+            <ui:Label tabindex="-1" text="Blue" display-tooltip-when-elided="true" name="name" />
+            <ui:SliderInt picking-mode="Ignore" value="0" high-value="8" name="count" show-input-field="true" />
+            <ui:Toggle name="toggle" />
+        </ui:VisualElement>
+        <ui:VisualElement name="red" class="resource-list-entry row-horizontal row" style="background-color: rgba(0, 0, 0, 0);">
+            <ui:VisualElement name="icon" class="resource resource-red" />
+            <ui:Label tabindex="-1" text="Red" display-tooltip-when-elided="true" name="name" />
+            <ui:SliderInt picking-mode="Ignore" value="0" high-value="8" name="count" show-input-field="true" />
+            <ui:Toggle name="toggle" />
+        </ui:VisualElement>
+        <ui:VisualElement name="green" class="resource-list-entry row-horizontal row" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:VisualElement name="icon" class="resource resource-green" />
+            <ui:Label tabindex="-1" text="Green" display-tooltip-when-elided="true" name="name" />
+            <ui:SliderInt picking-mode="Ignore" value="0" high-value="8" name="count" show-input-field="true" />
+            <ui:Toggle name="toggle" />
+        </ui:VisualElement>
+        <ui:VisualElement name="purple" class="resource-list-entry row-horizontal row" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:VisualElement name="icon" class="resource resource-purple" />
+            <ui:Label tabindex="-1" text="Purple" display-tooltip-when-elided="true" name="name" />
+            <ui:SliderInt picking-mode="Ignore" value="0" high-value="8" name="count" show-input-field="true" />
+            <ui:Toggle name="toggle" />
+        </ui:VisualElement>
+        <ui:VisualElement name="gold" class="resource-list-entry row-horizontal row" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:VisualElement name="icon" class="resource resource-gold" />
+            <ui:Label tabindex="-1" text="Gold" display-tooltip-when-elided="true" name="name" />
+            <ui:SliderInt picking-mode="Ignore" value="0" high-value="8" name="count" show-input-field="true" />
+            <ui:Toggle name="toggle" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

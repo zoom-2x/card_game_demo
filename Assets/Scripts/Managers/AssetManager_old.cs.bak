@@ -1,0 +1,182 @@
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+
+using UnityEngine;
+
+namespace CardGame.Managers
+{
+    public class AssetManager
+    {
+        Dictionary<string, Texture> asset_textures = new Dictionary<string, Texture>();
+        Dictionary<string, GameObject> asset_prefabs = new Dictionary<string, GameObject>();
+        Dictionary<string, Material> asset_materials = new Dictionary<string, Material>();
+        Dictionary<string, CardTemplate> asset_card_templates = new Dictionary<string, CardTemplate>();
+
+        [HideInInspector] public bool loading_in_progress = false;
+        [HideInInspector] public float loading_progress = 0;
+
+        AssetBundle bundle;
+        AssetBundleRequest load_request;
+
+        int bundle_count = 0;
+        int loaded_bundles = 0;
+        float one_over_bundle_count = 0;
+
+        public Queue<string> bundles_to_load = new Queue<string>();
+
+        public delegate void after_load();
+        public event after_load after_load_event;
+
+        public AssetManager()
+        {}
+
+        public void load_assets()
+        {
+            loading_progress = 0;
+
+            if (bundles_to_load.Count > 0)
+            {
+                loading_in_progress = true;
+                bundle_count = bundles_to_load.Count;
+                one_over_bundle_count = 1.0f / bundle_count;
+
+                _load_bundle();
+            }
+        }
+
+        void _load_bundle()
+        {
+            if (bundles_to_load.Count > 0)
+            {
+                string next_bundle = bundles_to_load.Dequeue();
+                Debug.Log($"[AssetManager] Loading bundle: {next_bundle}.");
+
+                bundle = AssetBundle.LoadFromFile(Path.Combine("Assets/AssetBundles", next_bundle));
+                load_request = bundle.LoadAllAssetsAsync();
+                load_request.completed += _completed_callback;
+            }
+        }
+
+        void _completed_callback(AsyncOperation op)
+        {
+            Debug.Log("[AssetManager] Bundle loaded.");
+
+            loaded_bundles++;
+            Object[] assets = load_request.allAssets;
+
+            // Add references to the dictionary.
+            for (int i = 0; i < assets.Length; ++i)
+            {
+                if (assets[i] is GameObject)
+                {
+                    if (!asset_prefabs.ContainsKey(assets[i].name))
+                        asset_prefabs.Add(assets[i].name, (GameObject) assets[i]);
+                }
+
+                else if (assets[i] is Texture2D)
+                {
+                    if (!asset_textures.ContainsKey(assets[i].name))
+                        asset_textures.Add(assets[i].name, (Texture) assets[i]);
+                }
+
+                else if (assets[i] is Material)
+                {
+                    if (!asset_materials.ContainsKey(assets[i].name))
+                        asset_materials.Add(assets[i].name, (Material) assets[i]);
+                }
+
+                else if (assets[i] is CardTemplate)
+                {
+                    Debug.Log(assets[i].name);
+                    if (!asset_card_templates.ContainsKey(assets[i].name))
+                        asset_card_templates.Add(assets[i].name, (CardTemplate) assets[i]);
+                }
+            }
+
+            if (bundles_to_load.Count == 0)
+            {
+                loading_in_progress = false;
+                load_request = null;
+                bundle = null;
+
+                after_load_event();
+            }
+            else
+            {
+                bundle.Unload(false);
+                _load_bundle();
+            }
+        }
+
+        // void Update()
+        // {
+        //     if (loading_in_progress)
+        //     {
+        //         float t0 = loaded_bundles * one_over_bundle_count;
+        //         float t1 = (loaded_bundles + 1) * one_over_bundle_count;
+        //         loading_progress = t0 + (t1 - t0) * load_request.progress;
+        //     }
+        // }
+
+        public Texture get_texture(string key)
+        {
+            Texture res = null;
+
+            try {
+                res = asset_textures[key];
+            }
+            catch (KeyNotFoundException) {
+                Debug.Log($"[AssetManager] Texture not found: {key}.");
+            }
+
+            return res;
+        }
+
+        public GameObject get_prefab(string key)
+        {
+            GameObject res = null;
+
+            try {
+                res = asset_prefabs[key];
+            }
+            catch (KeyNotFoundException) {
+                Debug.Log($"[AssetManager] Prefab not found: {key}.");
+            }
+
+            return res;
+        }
+
+        public Material get_material(string key, bool copy = false)
+        {
+            Material res = null;
+
+            try
+            {
+                res = asset_materials[key];
+
+                if (copy)
+                    res = Material.Instantiate(res);
+            }
+            catch (KeyNotFoundException) {
+                Debug.Log($"[AssetManager] Material not found: {key}.");
+            }
+
+            return res;
+        }
+
+        public CardTemplate get_card_template(string key)
+        {
+            CardTemplate res = null;
+
+            try {
+                res = asset_card_templates[key];
+            }
+            catch (KeyNotFoundException) {
+                Debug.Log($"[AssetManager] Card template not found: {key}.");
+            }
+
+            return res;
+        }
+    }
+}

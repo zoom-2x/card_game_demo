@@ -1,0 +1,51 @@
+ManifestFileVersion: 0
+CRC: 480572525
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: prefabs
+      Dependencies:
+        Dependency_0: fonts
+        Dependency_1: ui_textures
+        Dependency_2: materials
+    Info_1:
+      Name: ui
+      Dependencies:
+        Dependency_0: fonts
+        Dependency_1: ui_textures
+    Info_2:
+      Name: fonts
+      Dependencies:
+        Dependency_0: shaders
+    Info_3:
+      Name: levels
+      Dependencies:
+        Dependency_0: prefabs
+        Dependency_1: ui
+        Dependency_2: fonts
+        Dependency_3: ui_textures
+        Dependency_4: materials
+        Dependency_5: common_textures
+    Info_4:
+      Name: ui_textures
+      Dependencies: {}
+    Info_5:
+      Name: shaders
+      Dependencies:
+        Dependency_0: card_textures
+        Dependency_1: common_textures
+    Info_6:
+      Name: materials
+      Dependencies:
+        Dependency_0: shaders
+        Dependency_1: card_textures
+        Dependency_2: common_textures
+    Info_7:
+      Name: card_textures
+      Dependencies: {}
+    Info_8:
+      Name: card_templates
+      Dependencies: {}
+    Info_9:
+      Name: common_textures
+      Dependencies: {}

@@ -1,0 +1,155 @@
+.attribute-panel {
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+    border-left-width: 4px;
+    border-right-width: 4px;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    align-items: flex-start;
+    align-self: center;
+}
+
+.attribute-row {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: center;
+    flex-grow: 0;
+    width: auto;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgb(52, 69, 86);
+    border-right-color: rgb(52, 69, 86);
+    border-top-color: rgb(52, 69, 86);
+    border-bottom-color: rgb(52, 69, 86);
+}
+
+.attribute-cell {
+    flex-grow: 0;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('project://database/Assets/Textures/ui/attr-bkg.png?fileID=21300000&guid=3ef456f9be6e8884dbb5fc643bc38a48&type=3#attr-bkg');
+    -unity-background-scale-mode: scale-and-crop;
+    width: auto;
+    height: 23px;
+    min-width: 44px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left-color: rgb(52, 69, 86);
+    border-right-color: rgb(52, 69, 86);
+    border-top-color: rgb(52, 69, 86);
+    border-bottom-color: rgb(52, 69, 86);
+    border-left-width: 0;
+    border-right-width: 1px;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.attribute-cell-last {
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.attribute-icon {
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+    margin-top: 1px;
+}
+
+.attribute-text {
+    color: rgb(255, 255, 255);
+    -unity-font-definition: url('project://database/Assets/Fonts/Generated/Sansation-T/Sansation-Bold%20SDF.asset?fileID=11400000&guid=d53fc705cf9e69145b69dfb0a10aea13&type=2#Sansation-Bold SDF');
+    font-size: 12px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    width: auto;
+    white-space: nowrap;
+    text-overflow: clip;
+    align-self: stretch;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.attribute-expansion-icon {
+    background-image: url('project://database/Assets/Textures/ui/expansion-icon.png?fileID=21300000&guid=bccf98032e50ab94781b9a8145e62f79&type=3#expansion-icon');
+}
+
+.attribute-defense-icon {
+    background-image: url('project://database/Assets/Textures/ui/defense-icon.png?fileID=21300000&guid=1110588b2b422f04f983e6a2802c79b0&type=3#defense-icon');
+}
+
+.attribute-red-icon {
+    background-image: url('project://database/Assets/Textures/ui/resources/label-red-icon.png?fileID=21300000&guid=5a44d4ece438c1d4cb26330e537d0210&type=3#label-red-icon');
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.attribute-blue-icon {
+    background-image: url('project://database/Assets/Textures/ui/resources/label-blue-icon.png?fileID=21300000&guid=fb0b8842f13380e47a7c07eec5e688bc&type=3#label-blue-icon');
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.attribute-green-icon {
+    background-image: url('project://database/Assets/Textures/ui/resources/label-green-icon.png?fileID=21300000&guid=f7abd64d2170098499a0472d9fd0d167&type=3#label-green-icon');
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.attribute-purple-icon {
+    background-image: url('project://database/Assets/Textures/ui/resources/label-purple-icon.png?fileID=21300000&guid=560ad245c724ed6428bfe4bdf395acf3&type=3#label-purple-icon');
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.attribute-gold-icon {
+    background-image: url('project://database/Assets/Textures/ui/resources/label-gold-icon.png?fileID=21300000&guid=144a8cb3598abdf4c8afbf92b717e341&type=3#label-gold-icon');
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.unity-progress-bar__container {
+    width: 258px;
+    height: 54px;
+    max-height: initial;
+}
+
+.unity-progress-bar__background {
+    background-image: url('project://database/Assets/Textures/ui/progres-empty.png?fileID=21300000&guid=1c7a5e91b773816408d23ea160e1286a&type=3#progres-empty');
+    height: 54px;
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.unity-progress-bar__progress {
+    background-image: url('project://database/Assets/Textures/ui/progress-full.png?fileID=21300000&guid=14897b55b99c3a74bbce5e35d64e32cc&type=3#progress-full');
+    height: 54px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    max-height: initial;
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.unity-progress-bar__title {
+    -unity-font-definition: url('project://database/Assets/Fonts/Generated/Sansation-T/Sansation-Bold%20SDF.asset?fileID=11400000&guid=d53fc705cf9e69145b69dfb0a10aea13&type=2#Sansation-Bold SDF');
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+}

@@ -1,0 +1,58 @@
+.menu-base {
+    align-items: center;
+    background-image: url('project://database/Assets/Textures/ui/loader-bkg.png?fileID=21300000&guid=2c1da623935ecfb4a996a4f98a77933e&type=3#loader-bkg');
+    -unity-background-scale-mode: scale-and-crop;
+    flex-grow: 1;
+}
+
+.menu-title {
+    -unity-font-definition: url('project://database/Assets/Fonts/Generated/Sansation-T/Sansation-Light%20SDF.asset?fileID=11400000&guid=1e55e86c44a8c0748b13a2b52f7b8a30&type=2#Sansation-Light SDF');
+    -unity-font-style: normal;
+    font-size: 30px;
+    color: rgb(173, 127, 136);
+    -unity-text-align: middle-center;
+    width: 220px;
+    border-left-color: rgb(52, 60, 63);
+    border-right-color: rgb(52, 60, 63);
+    border-top-color: rgb(52, 60, 63);
+    border-bottom-color: rgb(52, 60, 63);
+    border-bottom-width: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.menu-button {
+    background-image: url('project://database/Assets/Textures/ui/menu_button_off.png?fileID=21300000&guid=7be6837c9305fc64bb02796181bfc3a4&type=3#menu_button_off');
+    width: 190px;
+    height: 53px;
+    background-color: rgb(0, 0, 0);
+    border-left-width: 4px;
+    border-right-width: 4px;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    -unity-font: initial;
+    -unity-font-definition: url('project://database/Assets/Fonts/Generated/Sansation-T/Sansation-Light%20SDF.asset?fileID=11400000&guid=1e55e86c44a8c0748b13a2b52f7b8a30&type=2#Sansation-Light SDF');
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+}
+
+.menu-button:hover {
+    background-image: url('project://database/Assets/Textures/ui/menu_button_on.png?fileID=21300000&guid=bc23c6e929e9a1e4ab1ff6093fdf52ef&type=3#menu_button_on');
+}
+
+.menu-button:active {
+}
+
+.menu-button__selected {
+}
